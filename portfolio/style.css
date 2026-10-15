@@ -1,0 +1,109 @@
+
+/* General Styling */
+
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+section {
+    scroll-margin-top: 80px;
+}
+
+/* Gradient Text */
+
+.gradient-text {
+    background: linear-gradient(90deg, #c084fc, #818cf8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Profile Circle */
+
+.profile-circle {
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #9333ea, #4338ca, #c084fc);
+    box-shadow: 0 0 70px rgba(147, 51, 234, 0.25);
+    animation: float 4s ease-in-out infinite;
+}
+
+.profile-inner {
+    width: 275px;
+    height: 275px;
+    border-radius: 50%;
+    background: #130d25;
+    border: 2px solid rgba(216, 180, 254, 0.4);
+}
+
+/* Cards */
+
+.custom-card {
+    background: linear-gradient(145deg, #1c1430, #120d20);
+    border: 1px solid rgba(192, 132, 252, 0.2);
+    transition: all 0.3s ease;
+}
+
+.custom-card:hover {
+    border-color: #a855f7;
+    box-shadow: 0 10px 35px rgba(147, 51, 234, 0.12);
+}
+
+.skill-card:hover {
+    transform: translateY(-7px);
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    border-color: #a855f7;
+}
+
+/* Project Images */
+
+.project-image {
+    height: 190px;
+}
+
+/* Technology Tags */
+
+.tag {
+    display: inline-block;
+    padding: 6px 10px;
+    font-size: 12px;
+    border-radius: 20px;
+    color: #e9d5ff;
+    background: rgba(126, 34, 206, 0.25);
+    border: 1px solid rgba(192, 132, 252, 0.15);
+}
+
+/* Animation */
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-12px);
+    }
+}
+
+/* Responsive Profile */
+
+@media (max-width: 640px) {
+    .profile-circle {
+        width: 260px;
+        height: 260px;
+    }
+
+    .profile-inner {
+        width: 220px;
+        height: 220px;
+    }
+}
